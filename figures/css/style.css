@@ -1,0 +1,59 @@
+body{
+    background: url(../images/bg3.png); /* Путь к фоновому изображению */
+    background-attachment: fixed; /* Фиксируем фон веб-страницы */
+    background-size: cover; /* Фон занимает всю доступную площадь */
+}
+.menu {
+    width:100%;
+	height:50px;
+    left: 0;
+    top: 0;
+    position: fixed; /* Фиксированное положение */
+    background: #5ad6e7; /* Цвет фона */ 
+    display:inline-block;
+    z-index:10;
+   }
+#next{
+    width:100px;
+	height:50px;
+    float: right;
+    background-color: #4CAF50;
+    border: 0px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+.container{
+    margin-top: 100px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.element{
+    width: 25%;
+    padding-bottom: 25%;
+    height: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+.rhombus{
+    border-radius: 0%;
+    transform: rotate(45deg) scale(0.7);
+}
+.circle {
+    border-radius: 50%;
+    transform: rotate(0deg);
+}
+.square{
+    border-radius: 0%;
+    transform: rotate(0deg);
+}
+.rhombus > video{
+    transform: rotate(-45deg) scale(1.4);
+}
+video{
+    width: 100%;
+}
