@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: tahoma, verdana, sans-serif;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
