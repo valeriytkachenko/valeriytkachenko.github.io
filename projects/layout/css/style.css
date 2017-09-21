@@ -1,0 +1,354 @@
+body{
+    margin: 0;
+    font-family: tahoma, verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+video{
+    position: absolute;
+    height: 100%;
+    transform: rotate(-45deg) scale(1.1);
+    z-index: -1;
+}
+h2, h3{
+    text-transform: uppercase;
+}
+#header-container{
+    overflow: hidden;
+    position: relative;
+}
+.polygone-main-container{
+    position: relative;
+    transform: rotate(45deg);
+    width: 92.55vw;
+    height: 71vw;
+    left: 17vw;
+    top: -22.5vw;
+    overflow: hidden;
+}
+.polygone-left-square{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    width: 45%;
+    height: 32%;
+}
+.polygone-right-square{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    width: 12%;
+    height: 31.55%;
+}
+.prs-square{
+    position: absolute;
+    top: 3.5%;
+    left: 7%;
+    width: 90%;
+    height: 0;
+    padding-bottom: 90%;
+    border: 1px solid gray;
+}
+.video-container{
+    position: absolute;
+    overflow: hidden;
+    width: 99%;
+    height: 99%;
+}
+.pls-squares{
+    width: 16.35%;
+    height: 29.4%;
+    margin: 2% 2.14% 0 0;
+    float: right;
+    border: 1px solid gray;
+}
+.clear{
+    clear: both;
+}
+.menu-container{
+    position: absolute;
+    width:500px;
+    z-index: 2;
+    text-align: center;
+    text-transform: uppercase;
+}
+.menu-container p{
+    margin: 0.5em;
+}
+.slider-text{
+    font-size: 36px;
+    color: #656565;
+}
+.bolder-text{
+    font-weight: bolder;
+}
+.slider-circles{
+    width: 10px;
+	height: 10px;
+    border: 1px solid #656565;
+	border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+}
+.active{
+    background-color: #656565;
+}
+.nav-element{
+    width: 250px;
+    height: 70px;
+  /*  margin: 0px 40px;*/
+    margin: 0;
+    position: relative;
+   /* align-items: center;*/
+  /* border: 1px solid #999999;*/
+}
+
+.nav-element:nth-child(odd){
+    float: left;
+}
+.nav-element:nth-child(even){
+    float: right;
+}
+.nav-rhombus{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border: 1px solid #999999;
+    top: 0;
+    transform-origin: center 0;
+    
+}
+.nav-linktext{
+    position: absolute;
+    width: 120px;
+    top: 40%;
+    transform: translateY(-50%);
+}
+.nav-circle{
+    width: 60px;
+	height: 60px;
+	background: #999999;
+	border-radius: 50%;
+    top: 10;
+    left: 10;
+    position: absolute;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: bolder;
+
+}
+.nav-element:nth-child(odd) .nav-linktext{
+    right: 120px;
+    text-align: right;
+}
+.nav-element:nth-child(even) .nav-linktext{
+    left: 120px;
+    text-align: left;
+}
+.nav-element:nth-child(odd) .nav-rhombus{
+    right: 15px;
+    top: 50%;
+    transform: rotate(45deg) translate(0,-50%);
+}
+.nav-element:nth-child(even) .nav-rhombus{
+    left: 15px;
+    top: 50%;
+    transform: rotate(45deg) translate(0,-50%);
+}
+#menu-nav{
+    margin: 20px;
+}
+.nav-element p{
+    font-size: 12px;
+    color: #656565;
+}
+.nav-element:hover .nav-circle{
+    background-color: white;
+    transition: .1s;
+}
+.nav-element:hover .nav-rhombus{
+    background-color: red;
+}
+.nav-element:hover p{
+    color: red;
+}
+.nav-circle p{
+    transform: rotate(-45deg) translate(-6px, 5px);
+    font-size: 20px;
+}
+ .menu-footer-reg{
+    margin-top: 40px;
+    text-transform: none;
+    font-size: 24px;
+}
+ .menu-header{
+    margin-bottom: 40px;
+}
+.red-text{
+    color: red;
+}
+.menu-pres-btn{
+    margin: 20px auto 0 auto;
+    background-color: red;
+    width: 310px;
+    height: 35px;
+}
+.pres-button-text{
+    color: white;
+    line-height: 35px;
+}
+.big-rhombus{
+    height: 40vw;
+    width: 40vw;
+    transform: rotate(45deg);
+    overflow: hidden;
+}
+.big-rhombus video{
+    transform: translate(-15vw) rotate(-45deg) scale(1.44);
+}
+.little-rhombus{
+    transform: rotate(45deg);
+    position: absolute;
+    width: 11vw;
+    height: 11vw;
+    border: 1px solid #656565;
+    z-index: 2;
+}
+.top-left-lr{
+    top: -10vw;
+    left: -5.5vw;
+}
+.bottom-left-lr{
+    bottom: -10vw;
+    left: -5.5vw;
+}
+.top-right-lr{
+    top: -10vw;
+    right: -5.5vw;
+}
+.bottom-right-lr{
+    bottom: -10vw;
+    right: -5.5vw;
+}
+.top-gray-lr{
+    background-color: gray;
+    top: 0;
+    left: 25vw;
+    z-index: -1;
+}
+.section-info{
+    width: 50vw;
+    right: 0;
+    top: 50%;
+    position: absolute;
+    transform: translate(0, -50%);
+}
+.info-text{
+    text-align: center;
+}
+.rhombus-container{
+    width: 47vw;
+}
+.section-info h2, .section-info h3{
+    text-align: center;
+}
+li {
+    list-style-type: none; /* Убираем маркеры у списка */
+   }
+li:before {
+    content: "- "; /* Добавляем в качестве маркера символ */
+   }
+section{
+    position: relative;
+}
+section:nth-child(odd) .big-rhombus{
+    margin-left: 9vw;
+}
+section:nth-child(even) .big-rhombus{
+    margin-left: -3vw;
+}
+section:nth-child(odd) .section-info{
+    left: 0;
+}
+.clearfix:after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+section{
+    margin: 5vw 0 5vw 0;
+}
+section:first-of-type{
+    margin: -15vw 0 5vw 0;
+}
+.big-video-main-container{
+    width: 100vw;
+    height: 55vw;
+    overflow: hidden;
+    position: relative;
+    margin: 10vw 0 0 0;
+
+}
+.big-video{
+    transform: rotate(0) scale(1.4);
+    border: 1px solid #656565;
+}
+.triangles{
+    position: absolute;
+	width: 0;
+	height: 0;
+}
+#triangle-first-top{
+	left: -10vw;
+    border-left: 8vw solid transparent;
+    border-right: 11vw solid transparent;
+    border-top: 5vw solid white;
+}
+#triangle-second-top{
+    left: 9vw;
+    border-left: 15vw solid transparent;
+    border-right: 39vw solid transparent;
+    border-top: 6vw solid white;
+}
+#triangle-third-top{
+    left: 54vw;
+    border-left: 28vw solid transparent;
+    border-right: 33vw solid transparent;
+    border-top: 8vw solid white;
+}
+#triangle-first-bot{
+    bottom: 0;
+	left: -10vw;
+    border-left: 8vw solid transparent;
+    border-right: 11vw solid transparent;
+    border-bottom: 5vw solid white;
+}
+#triangle-second-bot{
+    bottom: 0;
+    left: 9vw;
+    border-left: 15vw solid transparent;
+    border-right: 39vw solid transparent;
+    border-bottom: 6vw solid white;
+}
+#triangle-third-bot{
+    bottom: 0;
+    left: 54vw;
+    border-left: 28vw solid transparent;
+    border-right: 33vw solid transparent;
+    border-bottom: 8vw solid white;
+}
+.btn-bordered{
+    border: 1px solid #656565;
+    text-align: center;
+    width: 40%;
+    margin: 2vw auto;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 24;
+
+}
