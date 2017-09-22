@@ -54,16 +54,31 @@ video{
 .element{
     width: 25%;
     padding-bottom: 25%;
+    margin: 5vw 0;
     height: 0;
     transition: 1s;
     overflow: hidden;
 }
-
-/* mobile */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
     .element{
         width: 60%;
         padding-bottom: 60%;
-        margin: 20vw 0;
+        margin: 25vw 0;
+    }
+}
+/* mobile devices */
+@media screen and (max-device-width: 768px) and (orientation: portrait) {
+    .element{
+        width: 60%;
+        padding-bottom: 60%;
+        margin: 25vw 0;
+    }
+}
+
+@media screen and (max-device-width: 768px) and (orientation: landscape) {
+    .element{
+        width: 25%;
+        padding-bottom: 25%;
+        margin: 5vw 0;
     }
 }

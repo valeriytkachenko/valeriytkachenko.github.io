@@ -23,13 +23,13 @@
 			}
 
 		}
-	/*	$(document).ready(function(){
+		$(document).ready(function(){
 			changeSize();
 		});
 		$(window).resize(function(){
 			changeSize();
 		});
-		*/
+		
 		//воспроизводим следующее и ставим на паузу предыдущее видео
 		//при нажатии на кнопку next
 		function playNext(){
