@@ -6,14 +6,14 @@
 				console.log(firstelement_width);
 
 			if(firstelement_width < 300){
-				$(".element").css({"width": "60%", "padding-bottom": "60%", "margin": "75px 0px"});
+				//$(".element").css({"width": "60%", "padding-bottom": "60%", "margin": "75px 0px"});
 				$( "#next").unbind( "click" );
 				$( "#next" ).click(function(){
 					changeStyle();
 				});
 			}
 			else{
-				$(".element").css({"width": "25%", "padding-bottom": "25%","margin": "75px 0px"});
+				//$(".element").css({"width": "25%", "padding-bottom": "25%","margin": "75px 0px"});
 				$( "#next").unbind( "click" );
 				$( "#next" ).click(function(){
 					videoIndex = styleIndex;
@@ -21,6 +21,7 @@
 					changeStyle();
 				});
 			}
+
 		}
 		$(document).ready(function(){
 			changeSize();

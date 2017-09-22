@@ -32,13 +32,7 @@ body{
     justify-content: space-around;
     align-items: center;
 }
-.element{
-    width: 25%;
-    padding-bottom: 25%;
-    height: 0;
-    transition: 1s;
-    overflow: hidden;
-}
+
 .rhombus{
     border-radius: 0%;
     transform: rotate(45deg) scale(0.7);
@@ -56,4 +50,24 @@ body{
 }
 video{
     width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .element{
+        width: 25%;
+        padding-bottom: 25%;
+        height: 0;
+        transition: 1s;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 768px){
+    .element{
+    width: 60%;
+    padding-bottom: 60%;
+    margin: 75px 0px;
+    height: 0;
+    transition: 1s;
+    overflow: hidden;
+    }
 }
