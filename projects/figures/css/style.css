@@ -67,25 +67,3 @@ video{
         margin: 75px 0px;
     }
 }
-
-@media only screen and (max-width: 750px){
-    .element{
-        width: 60%;
-        padding-bottom: 60%;
-        margin: 75px 0px;
-    }
-}
-@media only screen and (max-width: 992px){
-
-}
-@media only screen and (max-width: 768px){
-
-}
-@media only screen and (max-width: 480px){
-    .element{
-        width: 60%;
-        padding-bottom: 60%;
-        margin: 75px 0px;
-    }
-
-}
