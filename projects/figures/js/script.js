@@ -2,26 +2,18 @@
 		var styleIndex = 1; //стиль меняем для видео, которое проигрывается, поэтому начинаем с 1
 		//меняем расположение элементов в зависимости от ширины первого
 		function changeSize(){
-			var firstelement_width = $("#firstelement").width();
-				console.log(firstelement_width);
-
-			if(firstelement_width < 300){
-				//$(".element").css({"width": "60%", "padding-bottom": "60%", "margin": "75px 0px"});
-				$( "#next").unbind( "click" );
+			var mql = window.matchMedia('@media screen and (max-device-width: 768px) and (orientation: portrait)');
+			if (mql.matches) {
 				$( "#next" ).click(function(){
 					changeStyle();
 				});
-			}
-			else{
-				//$(".element").css({"width": "25%", "padding-bottom": "25%","margin": "75px 0px"});
-				$( "#next").unbind( "click" );
+			} else {
 				$( "#next" ).click(function(){
 					videoIndex = styleIndex;
 					playNext();
 					changeStyle();
 				});
 			}
-
 		}
 		$(document).ready(function(){
 			changeSize();
