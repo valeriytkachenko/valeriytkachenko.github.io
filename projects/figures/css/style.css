@@ -67,7 +67,7 @@ video{
     }
 }
 /* mobile devices */
-@media screen and (max-device-width: 768px) and (orientation: portrait) {
+@media (max-device-width: 768px) and (orientation: portrait) {
     .element{
         width: 60%;
         padding-bottom: 60%;
@@ -75,7 +75,7 @@ video{
     }
 }
 
-@media screen and (max-device-width: 768px) and (orientation: landscape) {
+@media (max-device-width: 768px) and (orientation: landscape) {
     .element{
         width: 25%;
         padding-bottom: 25%;
