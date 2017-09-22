@@ -1,5 +1,5 @@
 body{
-    background: url(../images/bg3.png); /* Путь к фоновому изображению */
+    background: url(../images/bg.jpg); /* Путь к фоновому изображению */
     background-attachment: fixed; /* Фиксируем фон веб-страницы */
     background-size: cover; /* Фон занимает всю доступную площадь */
 }
