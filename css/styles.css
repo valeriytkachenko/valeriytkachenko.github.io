@@ -286,6 +286,7 @@ footer
 }
 #lead-content h1
 {
+    text-shadow: black 0 0 3px;
 	color: #fff;
 	font-size: 5em;
 	font-weight: 400;
@@ -295,14 +296,16 @@ footer
 }
 #lead-content h2
 {
-	color: #a0cfee;
+    text-shadow: black 0 0 3px;
+	color: white;
 	font-size: 2.25em;
 	font-weight: 500;
 	margin-bottom: 15px;
 }
 #lead-overlay
 {
-	background: rgba(33,125,187,0.8);
+	/*background: rgba(33,125,187,0.5);*/
+    background: rgba(231,223,222,0.2);
 	bottom: 0;
 	height: 100%;
 	left: 0;
