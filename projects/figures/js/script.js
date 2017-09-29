@@ -23,8 +23,10 @@
 			
 
 		}
-		$(document).ready(function(){
+		
+		$(document).ready(function(){	
 			changeSize();
+			$("#firstelement").get(0).play();
 		});
 		$(window).resize(function(){
 			changeSize();
